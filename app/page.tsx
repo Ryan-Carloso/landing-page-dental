@@ -6,8 +6,9 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Star, Calendar, Phone, MapPin, CheckCircle } from "lucide-react"
+import { Star, Calendar, Phone, MapPin, CheckCircle,Linkedin, Instagram } from "lucide-react"
 import { useState, useRef } from "react"
+
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -163,40 +164,30 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3">
-              <Card className="border-2 border-sky-100 hover:border-sky-200 transition-colors">
-                <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
-                  <div className="rounded-full bg-sky-100 p-3">
-                    <CheckCircle className="h-6 w-6 text-sky-500" />
+            <div className="mx-auto max-w-5xl py-12">
+              <div className="bg-sky-50 border-2 border-sky-200 rounded-xl p-8 shadow-sm">
+                <div className="flex flex-col items-center text-center space-y-6">
+                  <div className="rounded-full bg-sky-100 p-4">
+                    <CheckCircle className="h-10 w-10 text-sky-500" />
                   </div>
-                  <h3 className="text-xl font-bold">Clareamento a Laser</h3>
-                  <p className="text-muted-foreground">
-                    Resultados rápidos em apenas uma sessão. Ideal para quem busca transformação imediata.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="border-2 border-sky-100 hover:border-sky-200 transition-colors">
-                <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
-                  <div className="rounded-full bg-sky-100 p-3">
-                    <CheckCircle className="h-6 w-6 text-sky-500" />
+                  <h3 className="text-2xl font-bold">Clareamento Dental Profissional</h3>
+                  
+                  <div className="bg-sky-100 text-sky-800 px-6 py-4 rounded-md font-bold text-xl my-2 w-full max-w-md">
+                    🔥 OFERTA ESPECIAL: 4 sessões por apenas 99€! 🔥
                   </div>
-                  <h3 className="text-xl font-bold">Clareamento Caseiro</h3>
-                  <p className="text-muted-foreground">
-                    Kit personalizado para uso em casa sob orientação profissional. Resultados graduais e duradouros.
+                  
+                  <p className="text-muted-foreground text-lg max-w-3xl">
+                    Nosso tratamento de clareamento dental profissional oferece resultados rápidos e duradouros. 
+                    Ideal para quem busca um sorriso mais branco e radiante em poucas sessões.
                   </p>
-                </CardContent>
-              </Card>
-              <Card className="border-2 border-sky-100 hover:border-sky-200 transition-colors">
-                <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
-                  <div className="rounded-full bg-sky-100 p-3">
-                    <CheckCircle className="h-6 w-6 text-sky-500" />
-                  </div>
-                  <h3 className="text-xl font-bold">Manutenção</h3>
-                  <p className="text-muted-foreground">
-                    Tratamentos periódicos para manter seu sorriso sempre branco e radiante.
-                  </p>
-                </CardContent>
-              </Card>
+                  
+                  
+                  
+                  <Button className="bg-sky-500 hover:bg-sky-600 mt-4" size="lg" onClick={scrollToContact}>
+                    Aproveitar Oferta Agora
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -483,6 +474,19 @@ export default function Home() {
             <Link href="#" className="text-sm hover:underline underline-offset-4">
               Termos de Uso
             </Link>
+
+            <div className="flex gap-6">
+
+<a href="https://www.instagram.com/white_shining.pt/profilecard/?igsh=MTRzOXVjeWo3d3ZnNA%3D%3D" target="_blank" className="flex text-gray-800 items-center gap-2 text-xs md:text-sm text-muted-foreground hover:text-foreground">
+  <Instagram size={16} /> White Shining
+</a>
+</div>
+            <div className="flex gap-6">
+
+<a href="https://www.linkedin.com/in/ryancarlos/" target="_blank" className="flex items-center gap-2 text-xs md:text-sm text-muted-foreground hover:text-foreground">
+  <Linkedin size={10} /> dev-ryan
+</a>
+</div>
           </nav>
         </div>
       </footer>

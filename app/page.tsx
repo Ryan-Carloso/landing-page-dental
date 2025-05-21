@@ -206,6 +206,55 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Benefícios do Clareamento Dentário
+                </h2>
+                <p className="max-w-[700px] text-muted-foreground md:text-xl">
+                  Seguro quando feito com acompanhamento profissional.
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 md:grid-cols-2 lg:grid-cols-4">
+              <div className="flex flex-col items-center space-y-2 text-center">
+                <div className="rounded-full bg-white p-3 shadow-sm">
+                  <Star className="h-6 w-6 text-sky-500" />
+                </div>
+                <h3 className="text-lg font-bold">Resultados Rápidos</h3>
+                <p className="text-sm text-muted-foreground">
+                  Resultados visíveis logo após a primeira sessão.
+                </p>
+              </div>
+              <div className="flex flex-col items-center space-y-2 text-center">
+                <div className="rounded-full bg-white p-3 shadow-sm">
+                  <CheckCircle className="h-6 w-6 text-sky-500" />
+                </div>
+                <h3 className="text-lg font-bold">Procedimento Não Invasivo</h3>
+                <p className="text-sm text-muted-foreground">Tratamento seguro que preserva a estrutura dos dentes.</p>
+              </div>
+              <div className="flex flex-col items-center space-y-2 text-center">
+                <div className="rounded-full bg-white p-3 shadow-sm">
+                  <Star className="h-6 w-6 text-sky-500" />
+                </div>
+                <h3 className="text-lg font-bold">Aumento da Autoestima</h3>
+                <p className="text-sm text-muted-foreground">
+                  Mais confiança para sorrir em todas as situações.
+                </p>
+              </div>
+              <div className="flex flex-col items-center space-y-2 text-center">
+                <div className="rounded-full bg-white p-3 shadow-sm">
+                  <Calendar className="h-6 w-6 text-sky-500" />
+                </div>
+                <h3 className="text-lg font-bold">Atendimento Flexível</h3>
+                <p className="text-sm text-muted-foreground">Horários que se adaptam à sua rotina.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="depoimentos" className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                   Por que escolher a White Shining?
                 </h2>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
@@ -300,6 +349,9 @@ export default function Home() {
                   Entre em contato conosco para agendar uma avaliação gratuita e descobrir o melhor tratamento para o
                   seu sorriso.
                 </p>
+                <div className="bg-sky-100 text-sky-800 px-4 py-3 rounded-md font-medium my-2">
+                  Oferta por tempo limitado: 4 sessões de clareamento por apenas 99€!
+                </div>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <Phone className="h-5 w-5 text-sky-500" />

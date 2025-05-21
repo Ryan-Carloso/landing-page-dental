@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Star, Calendar, Phone, MapPin, CheckCircle,Linkedin, Instagram } from "lucide-react"
 import { useState, useRef } from "react"
+import Footer from "@/components/footer"
 
 
 export default function Home() {
@@ -461,35 +462,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="w-full border-t py-6 md:py-0">
-        <div className="container flex flex-col md:flex-row items-center justify-between gap-4 md:h-16 px-4 md:px-6">
-          <div className="flex items-center gap-2">
-            <span className="font-medium text-sky-500">White Shining</span>
-            <span className="font-medium">© {new Date().getFullYear()}</span>
-          </div>
-          <nav className="flex gap-4 sm:gap-6">
-            <Link href="#" className="text-sm hover:underline underline-offset-4">
-              Política de Privacidade
-            </Link>
-            <Link href="#" className="text-sm hover:underline underline-offset-4">
-              Termos de Uso
-            </Link>
-
-            <div className="flex gap-6">
-
-<a href="https://www.instagram.com/white_shining.pt/profilecard/?igsh=MTRzOXVjeWo3d3ZnNA%3D%3D" target="_blank" className="flex text-gray-800 items-center gap-2 text-xs md:text-sm text-muted-foreground hover:text-foreground">
-  <Instagram size={16} /> White Shining
-</a>
-</div>
-            <div className="flex gap-6">
-
-<a href="https://www.linkedin.com/in/ryancarlos/" target="_blank" className="flex items-center gap-2 text-xs md:text-sm text-muted-foreground hover:text-foreground">
-  <Linkedin size={10} /> dev-ryan
-</a>
-</div>
-          </nav>
-        </div>
-      </footer>
+<Footer/>
     </div>
   )
 }

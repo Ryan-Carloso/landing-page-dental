@@ -9,6 +9,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Star, Calendar, Phone, MapPin, CheckCircle,Linkedin, Instagram } from "lucide-react"
 import { useState, useRef } from "react"
 import Footer from "@/components/footer"
+import Script from "next/script"
+import Depoimentos from "@/components/Depoimentos"
 
 
 export default function Home() {
@@ -291,49 +293,19 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="depoimentos" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  O que nossos clientes dizem
-                </h2>
-                <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  Veja os resultados reais e a satisfação de quem já transformou seu sorriso conosco.
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
-              {[1, 2, 3].map((i) => (
-                <Card key={i} className="border-2 border-sky-100">
-                  <CardContent className="p-6 space-y-4">
-                    <div className="flex items-center space-x-1">
-                      {[1, 2, 3, 4, 5].map((star) => (
-                        <Star key={star} className="h-4 w-4 fill-current text-yellow-400" />
-                      ))}
-                    </div>
-                    <p className="text-muted-foreground">
-                      "Fiquei impressionado com os resultados do clareamento. Meu sorriso está muito mais bonito e
-                      natural. Recomendo a todos!"
-                    </p>
-                    <div className="flex items-center space-x-3">
-                      <div className="rounded-full bg-sky-100 h-10 w-10 flex items-center justify-center">
-                        <span className="font-medium text-sky-700">{String.fromCharCode(64 + i)}</span>
-                      </div>
-                      <div>
-                        <p className="font-medium">Cliente {i}</p>
-                        <p className="text-xs text-muted-foreground">Clareamento a Laser</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
+        <Depoimentos/>
 
-        <section id="contato" className="w-full py-12 md:py-24 lg:py-32 bg-sky-50" ref={contactRef}>
+        <section id="contato" className="w-full py-12 md:py-24 lg:py-32" ref={contactRef}>
           <div className="container px-4 md:px-6">
+            <div className="mb-12 w-full">
+              <iframe 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Exy-xZtg26q9riJM0BMVEVdqnsugiqsCkNiNSSsXm7Of8noCbqtkZiyNa0ZBcdU6Rh1Vg8kGx?gv=true" 
+                style={{border: 0}} 
+                width="100%" 
+                height="800" 
+                frameBorder="0">
+              </iframe>
+            </div>
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Agende sua consulta</h2>
@@ -459,6 +431,7 @@ export default function Home() {
                 </form>
               </div>
             </div>
+            
           </div>
         </section>
       </main>

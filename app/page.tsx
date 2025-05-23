@@ -11,6 +11,7 @@ import { useState, useRef } from "react"
 import Footer from "@/components/footer"
 import Script from "next/script"
 import Depoimentos from "@/components/Depoimentos"
+import FotoConsultorio from "@/components/FotoConsultorio"
 
 
 export default function Home() {
@@ -131,31 +132,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="galeria" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Nosso Consultório</h2>
-                <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  Conheça o ambiente onde realizamos nossos tratamentos com conforto e tecnologia.
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
-              {[1, 2, 3, 4, 5].map((i) => (
-                <div key={i} className="overflow-hidden rounded-lg shadow-md">
-                  <Image
-                    src={`/consultorio/foto${i}.jpeg`}
-                    alt={`Consultório White Shining - Imagem ${i}`}
-                    width={400}
-                    height={300}
-                    className="w-full h-auto object-cover transition-transform duration-300 hover:scale-105"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <FotoConsultorio/>
 
         <section id="servicos" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">

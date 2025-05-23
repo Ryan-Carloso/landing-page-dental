@@ -7,7 +7,6 @@ interface Depoimento {
   id: number;
   nome: string;
   texto: string;
-  servico: string;
   avaliacao: number;
   inicial?: string;
 }
@@ -32,28 +31,24 @@ const depoimentosData: Depoimento[] = [
     id: 1,
     nome: "Maria Silva",
     texto: "Fiquei impressionada com os resultados do clareamento. Meu sorriso está muito mais bonito e natural. Recomendo a todos!",
-    servico: "Clareamento a Laser",
     avaliacao: 5
   },
   {
     id: 2,
     nome: "João Santos",
     texto: "Excelente atendimento e resultados surpreendentes. Em apenas duas sessões já notei uma diferença significativa na cor dos meus dentes.",
-    servico: "Clareamento a Laser",
     avaliacao: 5
   },
   {
     id: 3,
     nome: "Ana Oliveira",
-    texto: "O kit de clareamento caseiro foi perfeito para minha rotina. Consegui resultados incríveis sem precisar sair de casa. A equipe deu todo o suporte necessário!",
-    servico: "Clareamento Caseiro",
+    texto: "O clareamento foi perfeito para minha rotina. Consegui resultados incríveis e a equipe deu todo o suporte necessário!",
     avaliacao: 4
   },
   {
     id: 4,
     nome: "Carlos Mendes",
-    texto: "Já fiz clareamento em outras clínicas, mas aqui o resultado foi muito superior. Profissionais atenciosos e preço justo. Valeu cada centavo!",
-    servico: "Clareamento a Laser",
+    texto: "Já fiz clareamento em outras clínicas, mas aqui o resultado foi muito superior. Profissionais atenciosos e preço justo. Valeu cada centimo!",
     avaliacao: 5
   }
 ];

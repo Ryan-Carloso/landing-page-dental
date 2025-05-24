@@ -157,7 +157,7 @@ export default function Home() {
                   </div>
                   
                   <p className="text-muted-foreground text-lg max-w-3xl">
-                    Nosso tratamento de clareamento dental profissional oferece resultados rápidos e duradouros. 
+                    Nosso tratamento de clareamento dental profissional oferece resultados imediatos e duradouros. 
                     Ideal para quem busca um sorriso mais branco e radiante em poucas sessões.
                   </p>
                   
@@ -189,7 +189,7 @@ export default function Home() {
                 <div className="rounded-full bg-white p-3 shadow-sm">
                   <Star className="h-6 w-6 text-sky-500" />
                 </div>
-                <h3 className="text-lg font-bold">Resultados Rápidos</h3>
+                <h3 className="text-lg font-bold">Resultados imediatos</h3>
                 <p className="text-sm text-muted-foreground">
                   Resultados visíveis logo após a primeira sessão.
                 </p>

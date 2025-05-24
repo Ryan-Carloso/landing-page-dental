@@ -67,31 +67,6 @@ const FotoConsultorio: React.FC = () => {
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             />
           </div>
-          
-          {/* Vídeos */}
-          <div className="md:col-span-6 overflow-hidden rounded-lg shadow-md">
-            <video
-              controls
-              width="100%"
-              height="400"
-              className="w-full h-full object-cover"
-            >
-              <source src="/video/video01.mp4" type="video/mp4" />
-              Seu navegador não suporta o elemento de vídeo.
-            </video>
-          </div>
-          
-          <div className="md:col-span-6 overflow-hidden rounded-lg shadow-md">
-            <video
-              controls
-              width="100%"
-              height="400"
-              className="w-full h-full object-cover"
-            >
-              <source src="/video/video02.mp4" type="video/mp4" />
-              Seu navegador não suporta o elemento de vídeo.
-            </video>
-          </div>
         </div>
       </div>
     </section>
